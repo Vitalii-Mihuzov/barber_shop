@@ -1,0 +1,291 @@
+$font-family: "Roboto", sans-serif
+$second-family: "Poppins", sans-serif
+$third-family: "Inter", sans-serif
+
+$white-color: rgba(255, 255, 255, 0.8)
+$black-color: rgba(0, 0, 0, 0.7)
+
+$btn-color: #00D3E2
+
+*
+    font-family: 'Roboto', sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    max-width: 1440px
+    margin: 0 auto
+
+header
+    position: relative
+    height: 80px
+
+nav
+    position: fixed
+    width: 100%
+    height: 80px
+    background-color: #FFFFFF
+    z-index: 5
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 17px 140px
+    max-width: 1440px
+    
+.menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_item-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 24px
+        padding-right: 40px
+        list-style-type: none
+        .menu_link
+            color: $black-color
+            font-family: $font-family
+            font-size: 18px
+            font-weight: 500
+            text-align: right
+            text-decoration: none
+    .sales-servise_call
+        color: $black-color
+        font-family: $font-family
+        font-size: 13px
+        font-weight: 400
+        text-align: right
+    .sales-servise_phone
+        margin-top: 4px
+        color: #000
+        font-family: $font-family
+        font-size: 18px
+        font-weight: 500
+        text-decoration: none
+
+.main_bg
+    position: relative
+    min-height: 798px
+    width: 100%
+    background: url('../img/bg/main_bg.jpg') center (center / cover) no-repeat
+    padding: 207px 260px 16px 260px
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.4)
+        z-index: 1
+    .main
+        position: relative
+        z-index: 2
+        &_header
+            color: #fff
+            font-family: $font-family
+            font-size: 64px
+            font-weight: 700
+            text-align: center
+        &_desrc
+            margin-top: 24px
+            color: $white-color
+            font-family: $font-family
+            font-size: 24px
+            font-weight: 500
+            line-height: 130%
+            text-align: center
+        .main_wrapp
+            margin-top: 40px
+            display: flex
+            justify-content: center
+            .main_wrapper
+                margin-left: 24px
+                &_dott
+                    content: ""
+                    width: 56px
+                    height: 56px
+                    background: url('../icons/dott_location.png') center (center/cover) no-repeat
+                &_name
+                    width: 153px
+                    color: #fff
+                    font-family: $font-family
+                    font-size: 28px
+                    font-weight: 700
+                    text-align: left
+                &_address
+                    min-width: 303px
+                    margin-top: 6px
+                    color: $white-color
+                    font-family: $font-family
+                    font-size: 18px
+                    font-weight: 500
+                    line-height: 24px
+                    text-align: left
+        &_btn
+                display: block
+                margin: 0 auto
+                margin-top: 48px
+                width: 265px
+                height: 56px
+                border-radius: 6px
+                background: $btn-color
+                cursor: pointer
+                border: none
+                color: #fff
+                font-family: $font-family
+                font-size: 18px
+                font-weight: 500
+                text-align: center
+        .main_arrow
+            img
+                display: block
+                margin: 0 auto
+                margin-top: 111px
+
+.about
+    min-height: 544px
+    background: #fff
+    display: flex
+    justify-content: center
+    &_wrap
+        padding: 100px 0
+        width: 730px
+        height: 100%
+        &_label
+            color: #00D3E2
+            font-family: $second-family
+            font-size: 18px
+            font-weight: 600
+            text-align: center
+        &_title
+            margin-top: 16px
+            color: #000
+            font-family: $second-family
+            font-size: 48px
+            font-weight: 700
+            line-height: 52px
+            text-align: center
+        &_desc
+            margin-top: 16px
+            color: $black-color
+            font-family: $second-family
+            font-size: 16px
+            font-weight: 600
+            line-height: 24px
+            text-align: center
+        .btn
+            display: block
+            margin: 0 auto
+            margin-top: 32px
+            width: 161px
+            height: 56px
+            border-radius: 6px
+            background: $btn-color
+            cursor: pointer
+            border: none
+            color: #fff
+            font-family: $font-family
+            font-size: 18px
+            font-weight: 500
+            text-align: center
+.benefits
+    min-height: 380px
+    background: #fff
+    padding: 84px 0
+    &_wrap
+        display: flex
+        justify-content: space-between
+        width: 825px
+        margin: 0 auto
+        .item
+            width: 255px
+            &_circle
+                margin: 0 auto
+                position: relative
+                content: ""
+                width: 80px
+                height: 80px
+                border-radius: 100%
+                background: #fff
+                box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.1)
+                img
+                    position: absolute
+                    width: 32px
+                    height: 30px
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+            &_num
+                margin-top: 32px
+                color: #000
+                font-family: $font-family
+                font-size: 28px
+                font-weight: 500
+                line-height: 130%
+                letter-spacing: 0%
+                text-align: center
+            &_desc
+                margin-top: 16px
+                color: $black-color
+                font-family: $font-family
+                font-size: 18px
+                font-weight: 400
+                line-height: 24px
+                letter-spacing: 0%
+                text-align: center
+
+.services
+    background: #F7F8FA
+    min-height: 1217px
+    padding: 120px 0
+    .container
+        width: 1110px
+        margin: 0 auto
+    &_title
+        color: #000
+        font-family: $font-family
+        font-size: 64px
+        font-weight: 700
+        text-align: center
+    &_desc
+        margin-top: 24px
+        color: $black-color
+        font-family: $font-family
+        font-size: 24px
+        font-weight: 500
+        text-align: center
+    &_cards
+        margin-top: 64px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 30px
+        .card
+            position: relative
+            width: 350px
+            height: 380px
+            img
+                width: 100%
+                height: 100%
+            .wrapper
+                position: absolute
+                width: 286px
+                bottom: 32px
+                left: 32px
+                .service
+                    color: #fff
+                    font-family: $font-family
+                    font-size: 28px
+                    font-weight: 500
+                    line-height: 130%
+                    text-align: center
+                .price
+                    color: $white-color
+                    font-family: $font-family
+                    font-size: 18px
+                    font-weight: 400
+                    line-height: 24px
+                    text-align: center
